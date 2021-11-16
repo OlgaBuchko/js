@@ -1,0 +1,10 @@
+.wrap{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+}
+.post-card{
+    height: 220px;
+    margin: 10px;
+}
+.post-card p{font-size:10px}
+.post-card h3{font-size: 13px}
