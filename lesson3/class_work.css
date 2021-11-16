@@ -1,0 +1,59 @@
+.simpsons{padding:15px;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 38%;
+    margin: 10px;
+position: relative;
+}
+.simpsons img{
+margin: 3px;
+    height: 50px;
+    width: 30px;
+    position: absolute;
+    right: 0;
+}
+
+.simpson_block{width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.simpsons3 h2{
+text-align: center;
+    background-color: antiquewhite;
+
+}
+.simpsons3 p{
+   text-align: justify;
+    background-color: gainsboro;
+}
+.simpsons3 img{
+    text-align: center;
+}
+.simpsons2 img{
+    width: 55px;
+    position: absolute;
+    top: 25%;
+    right: 50px;
+}
+.simpsons2 h2{
+    text-align: center;
+}
+.simpsons2 p{
+    width: 70%;
+}
+.simpsons2{
+   position: relative;
+}
+.products{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    justify-content: space-evenly;
+
+}
+.product-card{text-align: center}
+.product-card>img{
+    width: 120px;
+    height: 150px;
+}
