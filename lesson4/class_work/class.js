@@ -114,10 +114,10 @@ let number =[3,5,44,3,2,664,5,87]
 function startEnd(arr5) {
     let array2 = [];
 
-for (let i = arr5.length-1, j=0; i >= 0; i=i-1, j++) {
+for (let i = arr5.length-1, j=0; i >= 0; i=i-1) {
 
 array2[j]=arr5[i];
-
+    j++
     }
     console.log(array2)
 
