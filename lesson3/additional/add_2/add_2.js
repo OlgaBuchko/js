@@ -239,8 +239,8 @@ let usersList = [
 document.write(`<div class="usersList">`);
 for (const usersListElement of usersList) {
   document.write(` <div class="user-block">
-<h2>${usersListElement["id"]} - ${usersListElement["name"]} - ${usersListElement["username"]} </h2>
-            <h3>${usersListElement["email"]} - ${usersListElement["phone"]}</h3>
+<h2>${usersListElement.id} - ${usersListElement.name} - ${usersListElement.username} </h2>
+            <h3>${usersListElement.email} - ${usersListElement.phone}</h3>
            <div class="address-block">
                    <p>City - ${usersListElement.address.city}</p>
                    <p>Street - ${usersListElement.address.street}</p>
