@@ -4,20 +4,20 @@
 // document.body.appendChild(element);
 // element.id = "text"
 // element.innerText='lorem';
-// let buttom_closs = document.createElement('button');
-// buttom_closs.innerText = 'close';
-// document.body.appendChild(buttom_closs);
-// buttom_closs.onclick = function (){
+// let button_closs = document.createElement('button');
+// button_closs.innerText = 'close';
+// document.body.appendChild(button_closs);
+// button_closs.onclick = function (){
 //     let id_text = document.getElementById('text')
 //     id_text.style.display= 'none'
 // };
 //     - Создайте кнопку, при клике на которую, она будет скрывать сама себя.
 //
-// let buttom_closs = document.createElement('button');
-// buttom_closs.innerText = 'close';
-// document.body.appendChild(buttom_closs);
-// buttom_closs.onclick = function (){
-//     buttom_closs.style.display= 'none'
+// let button_closs = document.createElement('button');
+// button_closs.innerText = 'close';
+// document.body.appendChild(button_closs);
+// button_closs.onclick = function (){
+//     button_closs.style.display= 'none'
 // };
 // - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
 //
