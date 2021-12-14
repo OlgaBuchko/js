@@ -1,4 +1,4 @@
-.posts_box{
+.posts_box, .coments_box{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -15,4 +15,7 @@ h4{
 }
 p{margin: 2px;
     font-size: 8px;
+}
+.coment_block{
+    width: 45%;
 }
