@@ -1,0 +1,24 @@
+
+.allcoments{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.divcoment{
+    width: 17%;
+    height: 225px;
+}
+
+h5{margin: 0 5px 0 0;
+    line-height: 13px;
+}
+.divcoment>h4{font-size: 9px;
+    line-height: 14px;
+    margin: 0;
+}
+p{margin:  0 2px 0 0;
+    font-size: 8px;
+}
+.post{
+    width: 100%;
+}
