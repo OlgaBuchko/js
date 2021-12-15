@@ -8,6 +8,10 @@
 <script>
     let favorites = JSON.parse(localStorage.getItem('favorites'));
     console.log(favorites)
+let favorits_div = document.createElement('div')
+    document.body.appendChild(favorits_div)
+    favorits_div.innerText=JSON.stringify(favorites)
+
 
 </script>
 </body>
