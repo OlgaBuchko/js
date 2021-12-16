@@ -7,11 +7,13 @@
 <body>
 <script>
     let favorites = JSON.parse(localStorage.getItem('favorites'));
-    console.log(favorites)
-let favorits_div = document.createElement('div')
-    document.body.appendChild(favorits_div)
-    favorits_div.innerText=JSON.stringify(favorites)
-
+    for (const favorite of favorites) {
+        console.log(favorite)
+        let div = document.createElement('div')
+        document.body.appendChild(div)
+        div.innerHTML =
+            `name: ${favorite.name};  age: ${favorite.age};  status: ${favorite.status} `
+    }
 
 </script>
 </body>
