@@ -4,10 +4,8 @@ function morning(isWorkingDay = true) {
         setTimeout(()=>{
          if (isWorkingDay){
              resolve("просинайся");
-             return isWorkingDay;
          }else {
              reject('поспи трошки');
-             return  isWorkingDay;
          }
         },1000)
     })
@@ -16,7 +14,8 @@ function go_eat(eat) {
     return new Promise((resolve, reject) => {
         setTimeout(()=>{
             if (eat){
-                resolve('їмо '+eat)
+                  resolve('їмо '+eat);
+                return eat;
             }else{
             reject('пий чай')}
         }, 4000)
@@ -26,7 +25,7 @@ function go_school(isWorkingDay) {
     return new Promise((resolve, reject) => {
         setTimeout(()=>{
             if (isWorkingDay){
-                resolve('веду дитя до школи')
+                resolve('веду дитя до школи');
             }else{
             reject('ура! вихідний')}
         }, 2000)
@@ -80,19 +79,30 @@ function go_slip() {
 }
 
 
-async function day() {
+async function alldays() {
    const working_day = await morning(true);
-  await go_school(working_day);
-    await study();
-    await go_eat('картолплю');
-    await go_balet();
-    await go_home();
-   const cooking = await cooking('макарони');
-    await go_eat(cooking);
-    await homeWork();
-    await go_slip();
+    const goSchool = await go_school(true);
+    const studys = await study();
+    const goEat =await go_eat('картолплю');
+    const goBalet =await go_balet();
+    const goHome =await go_home();
+   const cook = await cooking('макарони');
+    const goEat2 = await go_eat('макарони');
+    const home_work =await homeWork();
+    const goSlip = await go_slip();
+
+    console.log(working_day);
+    console.log(goSchool);
+    console.log(studys);
+    console.log(goEat);
+    console.log(goBalet);
+    console.log(goHome);
+    console.log(cook);
+    console.log(goEat2);
+    console.log(home_work);
+    console.log(goSlip)
 }
-day()
+alldays()
 
 //
 // morning(true)
