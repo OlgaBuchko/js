@@ -80,27 +80,30 @@ function go_slip() {
 
 
 async function alldays() {
+    try {
    const working_day = await morning(true);
-    const goSchool = await go_school(true);
-    const studys = await study();
-    const goEat =await go_eat('картолплю');
-    const goBalet =await go_balet();
-    const goHome =await go_home();
-   const cook = await cooking('макарони');
-    const goEat2 = await go_eat('макарони');
-    const home_work =await homeWork();
-    const goSlip = await go_slip();
-
     console.log(working_day);
+    const goSchool = await go_school(true);
     console.log(goSchool);
+    const studys = await study();
     console.log(studys);
+    const goEat =await go_eat('картолплю');
     console.log(goEat);
+    const goBalet =await go_balet();
     console.log(goBalet);
+    const goHome =await go_home();
     console.log(goHome);
+   const cook = await cooking('макарони');
     console.log(cook);
+    const goEat2 = await go_eat('макарони');
     console.log(goEat2);
+    const home_work =await homeWork();
     console.log(home_work);
+    const goSlip = await go_slip();
     console.log(goSlip)
+    } catch (e) {
+        console.error(e)
+    }
 }
 alldays()
 
