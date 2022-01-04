@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.user_div{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    align-items: center;
+    justify-content: space-around;
+    background:linear-gradient(grey, white);
+    margin-top: 20px;
+}
+.button{
+    width: 100px;
+    height: 20px;
+    border: #6a6663 2px solid;
+    border-radius: 15px;
+    background: #f5f5e4;
+    color: #3d3a37;
+    cursor: pointer;
+}

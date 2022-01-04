@@ -13,7 +13,9 @@ fetch( 'https://jsonplaceholder.typicode.com/users')
         let button = document.createElement('button')
         user_div.appendChild(button)
         button.innerText='details'
-        button.onclick=function (){localStorage.clear()
+        button.classList.add('button')
+        button.onclick=function (){
+            localStorage.clear()
             localStorage.setItem('user-details',JSON.stringify(user.id))
             window.location.href='user-details.html'
         }

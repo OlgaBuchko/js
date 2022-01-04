@@ -1,0 +1,63 @@
+.d_none{
+    display:none;
+}
+.user_box, .address, .company, .post_title{ width: 30%;
+    font-size: 10px;
+    background: linear-gradient(saddlebrown, navajowhite);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #5a2601;
+    margin: 10px;
+    text-align: center;
+}
+.button_details, .button_post{
+    width: 90%;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 15px;
+    border: saddlebrown 2px solid;
+    background-color: #de8b4b;
+    color: #6a2d02;
+}
+.div_post{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.post_title{
+    align-items: center;
+    width: 17%;
+    height: 95px;
+    display: flex;
+    justify-content: end;
+    line-height: 15px;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.button_post{
+
+}
+.user_div{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    align-items: center;
+    justify-content: space-around;
+    background:linear-gradient(grey, white);
+    margin-top: 20px;
+}
+.button{
+    width: 100px;
+    border: #6a6663 2px solid;
+    border-radius: 15px;
+    background: #f5f5e4;
+    color: #3d3a37;
+    cursor: pointer;
+}
+.container_post{
+    display: flex;
+}
