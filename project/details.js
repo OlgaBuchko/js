@@ -15,7 +15,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
                 let address = document.createElement("div")
                 address.classList.add('address')
                 user_container.appendChild(address)
-                address.innerHTML = `<split>user address</split><br>street: ${user.address.street} <br> city: ${user.address.city} <br> geo: lat = ${user.address.geo.lat} ;lng = ${user.address.geo.lng} <br> suite: ${user.address.suite} <br> zipcode: ${user.address.zipcode}`
+                address.innerHTML = `<split>user address</split><br> street: ${user.address.street} <br> city: ${user.address.city} <br> geo: lat = ${user.address.geo.lat} ;lng = ${user.address.geo.lng} <br> suite: ${user.address.suite} <br> zipcode: ${user.address.zipcode}`
                 let company = document.createElement('div')
                 company.classList.add('company')
                 company.innerHTML= `<split>user company</split><br>company: ${user.company.name} <br>catchPhrase: ${user.company.catchPhrase} <br>  bs: ${user.company.bs}`
@@ -24,11 +24,13 @@ fetch('https://jsonplaceholder.typicode.com/users')
                 button.innerText='post of current user'
                 user_container.appendChild(button)
                 button.classList.add('button_details')
+                button.classList.add('d-none')
                 button.onclick=function (){
                     div_post.classList.toggle('d_none')
+                    div_post.classList.toggle('div_post')
                 }
                 let div_post = document.createElement('div')
-                div_post.classList.add("div_post",'d_none')
+                div_post.classList.add('d_none')
                 user_container.appendChild(div_post)
                 fetch('https://jsonplaceholder.typicode.com/posts')
                     .then(response=>response.json())

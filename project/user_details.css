@@ -60,4 +60,26 @@
 }
 .container_post{
     display: flex;
+    flex-direction: column;
+}
+.comments{
+display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.post{
+    border: blue 2px solid;
+    font-size: 13px;
+    background: linear-gradient(blue, white);
+    color: darkblue;
+}
+.comment_block{
+    width: 21%;
+    margin-top: 6px;
+    font-size: 11px;
+    border: cornflowerblue 1px solid;
+    background: linear-gradient(cornflowerblue, white);
+    color: #1b68e3;
+    padding: 5px;
+    word-wrap: break-word;
 }
